@@ -18,7 +18,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import com.jfoenix.controls.JFXButton;
 
-public class HelloController implements Initializable {
+public class Controller implements Initializable {
 
     @FXML
     private JFXButton loginBtn;

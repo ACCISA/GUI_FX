@@ -19,7 +19,7 @@ public class Connections {
             System.out.println("Driver not found");
             e.printStackTrace();
         }
-        String url = "jdbc:mysql:///appdb";
+        String url = "jdbc:mysql://appdb";
         try {
             con = (Connection) DriverManager.getConnection(url, "root", "");
             System.out.println("[DB] Connected");
