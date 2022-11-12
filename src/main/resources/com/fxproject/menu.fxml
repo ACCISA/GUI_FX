@@ -5,6 +5,9 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="607.0" prefWidth="851.0" style="-fx-background-color: #d9dee4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fxproject.MenuController">
@@ -31,5 +34,15 @@
         </menus>
       </MenuBar>
       <Button fx:id="testButton" disable="true" layoutX="236.0" layoutY="255.0" mnemonicParsing="false" text="Button" visible="false" />
+      <SplitPane layoutX="236.0" layoutY="25.0" prefHeight="582.0" prefWidth="615.0">
+         <items>
+            <TableView prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+         </items>
+      </SplitPane>
    </children>
 </AnchorPane>

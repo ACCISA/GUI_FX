@@ -1,10 +1,6 @@
 package com.db;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Timer;
-import java.util.TimerTask;
 import java.sql.Connection;
 
 public class Connections {
@@ -19,12 +15,11 @@ public class Connections {
             System.out.println("Driver not found");
             e.printStackTrace();
         }
-        String url = "jdbc:mysql://appdb";
+        String url = "jdbc:mysql://127.0.0.1:3306/appdb";
         try {
-            con = (Connection) DriverManager.getConnection(url, "root", "");
+            con = (Connection) DriverManager.getConnection(url, "root", "aniss2003");
             System.out.println("[DB] Connected");
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
