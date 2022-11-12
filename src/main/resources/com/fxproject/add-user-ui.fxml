@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="303.0" prefWidth="344.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fxproject.AddUserController">
+   <children>
+      <JFXTextField layoutX="42.0" layoutY="50.0" prefHeight="51.0" prefWidth="118.0" promptText="Username">
+         <font>
+            <Font size="24.0" />
+         </font></JFXTextField>
+      <JFXTextField layoutX="185.0" layoutY="50.0" prefHeight="51.0" prefWidth="118.0" promptText="Password">
+         <font>
+            <Font size="24.0" />
+         </font></JFXTextField>
+      <JFXButton layoutX="91.0" layoutY="203.0" prefHeight="51.0" prefWidth="165.0" text="Create User">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField layoutX="73.0" layoutY="127.0" prefHeight="51.0" prefWidth="200.0" promptText="Confirm Password">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXPasswordField>
+   </children>
+</AnchorPane>

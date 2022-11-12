@@ -4,6 +4,7 @@ import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 
@@ -11,7 +12,6 @@ import java.io.IOException;
 // test git commit
 public class LoginUI extends javafx.application.Application {
     @Override
-
     public void start(Stage stage) throws IOException {
         double width = 640;
         double height = 480;
@@ -20,14 +20,15 @@ public class LoginUI extends javafx.application.Application {
         stage.setX((screenBounds.getWidth() - width) / 2);
         stage.setY((screenBounds.getHeight() - height) / 2);
 
-        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("login-ui.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 567, 279);
         stage.setTitle("Login");
+        stage.getIcons().add(new Image("C:\\Users\\darra\\IdeaProjects\\FXProject\\src\\main\\java\\com\\fxproject\\concordia-logo.png"));
         stage.setResizable(false);
         stage.setScene(scene);
-        Platform.setImplicitExit(false);
         stage.show();
         System.out.println("[Login] Login UI Started");
+
 
 
     }
