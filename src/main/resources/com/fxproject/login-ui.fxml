@@ -24,8 +24,14 @@
             <Font size="18.0" />
          </font>
       </JFXButton>
-      <JFXTextField fx:id="usernameField" layoutX="284.0" layoutY="60.0" prefHeight="40.0" prefWidth="219.0" promptText="Username" />
-      <JFXPasswordField fx:id="passwordField" layoutX="284.0" layoutY="139.0" prefHeight="40.0" prefWidth="219.0" promptText="********" />
+      <JFXTextField fx:id="usernameField" layoutX="284.0" layoutY="60.0" prefHeight="40.0" prefWidth="219.0" promptText="Username">
+         <font>
+            <Font size="18.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="passwordField" layoutX="284.0" layoutY="139.0" prefHeight="40.0" prefWidth="219.0" promptText="********">
+         <font>
+            <Font size="18.0" />
+         </font></JFXPasswordField>
 
    </children>
 </AnchorPane>

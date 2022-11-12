@@ -53,19 +53,7 @@ public class MenuController {
     public void logoutUser(){
         testButton.getScene().getWindow().hide();
         Instance logoutUI = new Instance(Controller.class, "login-ui.fxml");
-//        Stage loginStage = new Stage();
-//        try{
-//            URL fxmlLocation = Controller.class.getResource("login-ui.fxml");
-//            loginStage.getIcons().add(new Image("C:\\Users\\darra\\IdeaProjects\\FXProject\\src\\main\\java\\com\\fxproject\\concordia-logo.png"));
-//            FXMLLoader loader = new FXMLLoader(fxmlLocation);
-//            Parent root = loader.load(fxmlLocation);
-//            Scene scene = new Scene(root);
-//            loginStage.setScene(scene);
-//            loginStage.show();
-//            loginStage.setResizable(false);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+
     }
 
     public void addUser(){

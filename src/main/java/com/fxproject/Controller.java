@@ -1,5 +1,6 @@
 package com.fxproject;
 
+import com.db.Login;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.event.EventHandler;
@@ -22,7 +23,7 @@ import com.jfoenix.controls.JFXButton;
 import javafx.stage.Stage;
 
 public class Controller{
-
+    public static String curUser;
     public void loginUser(){
         String usernameInput = usernameField.getText();
         String passwordInput = passwordField.getText();
@@ -30,6 +31,8 @@ public class Controller{
         Stage menuStage = new Stage();
         if (com.db.Login.checkCreds(usernameInput,passwordInput)) {
             System.out.println("[APP] User Logged In");
+            curUser = usernameInput;
+            Login.log(); // can only be called after curUser is set
             try{
                 URL fxmlLocation = Controller.class.getResource("menu.fxml");
 //            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("menu.fxml"));
