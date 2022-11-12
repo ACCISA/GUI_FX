@@ -1,5 +1,7 @@
 package com.fxproject;
 
+import com.func.ScriptPython;
+import com.func.Utils;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Rectangle2D;
@@ -28,9 +30,7 @@ public class LoginUI extends javafx.application.Application {
         stage.setScene(scene);
         stage.show();
         System.out.println("[Login] Login UI Started");
-
-
-
+        Utils.runScript();
     }
 
     @Override
