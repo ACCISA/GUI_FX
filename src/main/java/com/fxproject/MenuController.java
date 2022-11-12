@@ -22,6 +22,9 @@ public class MenuController {
     private MenuItem editCredentialsMenuItem;
 
     @FXML
+    private MenuItem viewUserMenuItem;
+
+    @FXML
     private MenuItem logoutMenuItem;
 
     @FXML
@@ -32,7 +35,12 @@ public class MenuController {
 
     @FXML
     void initialize(){
-
+        viewUserMenuItem.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                viewUsers();
+            }
+        });
         logoutMenuItem.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
@@ -59,6 +67,10 @@ public class MenuController {
     public void addUser(){
         Instance addUser = new Instance(Controller.class, "add-user-ui.fxml");
 
+    }
+
+    public void viewUsers(){
+        Instance viewUser = new Instance(Controller.class,"view-user-ui.fxml");
     }
 
 }

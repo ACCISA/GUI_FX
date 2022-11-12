@@ -4,15 +4,16 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fxproject.ViewUserUi">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fxproject.Controllers.ViewUserUI">
    <children>
-      <TableView prefHeight="400.0" prefWidth="600.0">
+      <TableView fx:id="tableUsers" prefHeight="400.0" prefWidth="705.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Username" />
-          <TableColumn prefWidth="123.0" text="Password" />
-            <TableColumn prefWidth="75.0" text="Created By" />
-            <TableColumn prefWidth="100.0" text="Date Created" />
+            <TableColumn fx:id="colUserID" prefWidth="75.0" text="User ID" />
+          <TableColumn fx:id="colCaller" prefWidth="75.0" text="Created By" />
+          <TableColumn fx:id="colUsername" prefWidth="123.0" text="Username" />
+            <TableColumn fx:id="colOriginalPassword" prefWidth="120.0" text="Original Password" />
+            <TableColumn fx:id="colCurrentPassword" prefWidth="112.0" text="Current Password" />
+            <TableColumn fx:id="colCreatedOn" prefWidth="151.0" text="Date Created" />
         </columns>
       </TableView>
    </children>

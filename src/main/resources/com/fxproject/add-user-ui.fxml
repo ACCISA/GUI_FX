@@ -12,20 +12,20 @@
          <font>
             <Font size="24.0" />
          </font></JFXTextField>
-      <JFXButton fx:id="createUser" layoutX="91.0" layoutY="203.0" prefHeight="51.0" prefWidth="165.0" text="Create User">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </JFXButton>
-      <JFXPasswordField fx:id="addPasswordConfirm" layoutX="73.0" layoutY="127.0" prefHeight="51.0" prefWidth="200.0" promptText="Confirm Password">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </JFXPasswordField>
       <JFXPasswordField fx:id="addPassword" layoutX="189.0" layoutY="50.0" prefHeight="51.0" prefWidth="135.0" promptText="Password">
          <font>
             <Font size="24.0" />
          </font>
       </JFXPasswordField>
+      <JFXPasswordField fx:id="addPasswordConfirm" layoutX="73.0" layoutY="127.0" prefHeight="51.0" prefWidth="200.0" promptText="Confirm Password">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="createUser" layoutX="91.0" layoutY="203.0" prefHeight="51.0" prefWidth="165.0" text="Create User">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
    </children>
 </AnchorPane>

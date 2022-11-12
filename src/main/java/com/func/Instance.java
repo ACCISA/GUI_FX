@@ -25,8 +25,12 @@ public class Instance {
                 stageUI.setTitle("Add User Form");
                 stageUI.setResizable(false);
             } else if (title.equals("login-ui.fxml")) {
+                stageUI.setResizable(false);
                 stageUI.setTitle("Login");
 
+            } else if (title.equals("view-user-ui.fxml")){
+                stageUI.setResizable(true);
+                stageUI.setTitle("View Users");
             }
             stageUI.show();
 

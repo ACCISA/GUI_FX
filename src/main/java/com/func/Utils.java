@@ -19,7 +19,7 @@ public class Utils {
     public static  void runScript(){
         try{
             //https://stackoverflow.com/questions/65348890/python-was-not-found-run-without-arguments-to-install-from-the-microsoft-store
-            ProcessBuilder builder = new ProcessBuilder("python",System.getProperty("user.dir") + "\\src\\main\\java\\com\\fxproject\\test.py", "1", "4" );
+            ProcessBuilder builder = new ProcessBuilder("python",System.getProperty("user.dir") + "\\src\\main\\java\\com\\Scripts\\test.py", "1", "4" );
             Process process = builder.start();
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             BufferedReader readers = new BufferedReader(new InputStreamReader(process.getErrorStream()));

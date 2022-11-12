@@ -25,13 +25,14 @@ public class AddUser {
     }
 
     public static void log(){
-        String sql = "INSERT INTO account_creation_logs (caller, username, password, time) VALUEs (?,?,?,?)";
+        String sql = "INSERT INTO account_creation_logs (caller, username, original_password, current_password, time) VALUEs (?,?,?,?,?)";
         try{
             PreparedStatement stmt = Connections.con.prepareStatement(sql);
             stmt.setString(1, Controller.curUser);
             stmt.setString(2, usernameCreated);
             stmt.setString(3, passwordCreated);
-            stmt.setString(4, Utils.getTime());
+            stmt.setString(4, passwordCreated);
+            stmt.setString(5, Utils.getTime());
             stmt.execute();
         } catch (SQLException e) {
             System.out.println("[DB] Error Creating User");
