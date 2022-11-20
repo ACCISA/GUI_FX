@@ -8,7 +8,7 @@ public class ScriptPython {
     public void runScript(){
         Process process;
         try{
-            process = Runtime.getRuntime().exec(new String[]{"C:\\Users\\darra\\IdeaProjects\\FXProject\\src\\main\\java\\com\\fxproject\\test.py","1","4"});
+            process = Runtime.getRuntime().exec(new String[]{"C:\\Users\\darra\\IdeaProjects\\FXProject\\src\\main\\java\\com\\Scripts\\DatabaseMatchup.py"});
             mProcess = process;
         }catch(Exception e) {
             System.out.println("Exception Raised" + e.toString());

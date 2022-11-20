@@ -10,7 +10,7 @@ public class AddUser {
     private static String usernameCreated;
     private static String passwordCreated;
     public AddUser(String username, String password) {
-        String sql = "INSERT INTO accounts (username, password) VALUEs (?,?)";
+        String sql = "INSERT INTO accounts (first_name, last_name, username, password, position, permission, date_created ) VALUEs (?,?)";
         try{
             PreparedStatement stmt = Connections.con.prepareStatement(sql);
             stmt.setString(1,username);
